@@ -1,3 +1,6 @@
+# Python 3.6.3
+# Created 10/20/2017
+
 from appJar import gui
 from bs4 import BeautifulSoup
 import codecs
