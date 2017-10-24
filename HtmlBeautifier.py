@@ -7,7 +7,7 @@ import codecs
 import pyperclip
 
 
-def format(btn):
+def beautify(btn):
     html_file = codecs.open(app.getEntry("html"))
     read = html_file.read()
     soup = BeautifulSoup(read, "html.parser")
@@ -30,7 +30,6 @@ app.setBg("grey")
 app.addEntry("html")
 app.setEntryDefault("html", "Enter file path to HTML document to beautify!")
 app.addTextArea("formatted")
-app.addButtons(["format", "clear", "copy"], [format, clear, copy])
+app.addButtons(["beautify", "clear", "copy"], [beautify, clear, copy])
 
 app.go()
-
